@@ -1,6 +1,14 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import spacy
+import streamlit as st
+
+
+@st.cache_resource
+def load_spacy_model():
+    return spacy.load("en_core_web_lg")
+
+nlp = load_spacy_model()
 
 nlp = spacy.load('en_core_web_lg')
 
