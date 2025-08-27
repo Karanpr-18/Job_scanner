@@ -1,19 +1,6 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import spacy
-import subprocess
-import sys
-
-model_name = "en_core_web_lg"
-try:
-    nlp = spacy.load(model_name)
-except OSError:
-    print(f"Model {model_name} not found. Downloading...")
-    subprocess.run([sys.executable, "-m", "spacy", "download", model_name], check=True)
-    print(f"Downloaded {model_name}. Loading model...")
-    nlp = spacy.load(model_name)
-
-
 
 nlp = spacy.load('en_core_web_lg')
 
