@@ -10,7 +10,7 @@ def load_spacy_model():
 
 nlp = load_spacy_model()
 
-nlp = spacy.load('en_core_web_lg')
+# nlp = spacy.load('en_core_web_lg')
 
 def __init__(job_desc, cv_text):
 
