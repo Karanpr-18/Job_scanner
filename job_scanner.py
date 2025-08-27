@@ -4,9 +4,6 @@ import spacy
 import subprocess
 import sys
 
-model_name = "en_core_web_lg"
-
-
 nlp = spacy.load('en_core_web_lg')
 
 def __init__(job_desc, cv_text):
