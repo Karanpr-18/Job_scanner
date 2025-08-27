@@ -1,5 +1,6 @@
 streamlit
 spacy
+PyPDF2
 scikit-learn
 rich
 markdown-it-py
