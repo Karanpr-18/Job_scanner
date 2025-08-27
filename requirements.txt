@@ -1,0 +1,4 @@
+sklearn
+spacy
+streamlit
+PyPDF2
