@@ -2,6 +2,18 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import spacy
 
+import spacy
+import subprocess
+import sys
+
+model_name = "en_core_web_lg"
+try:
+    nlp = spacy.load(model_name)
+except OSError:
+    subprocess.run([sys.executable, "-m", "spacy", "download", model_name], check=True)
+    nlp = spacy.load(model_name)
+
+
 nlp = spacy.load('en_core_web_lg')
 
 def __init__(job_desc, cv_text):
