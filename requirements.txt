@@ -1,7 +1,7 @@
-spacy>=3.5.0
+spacy
 scikit-learn
-rich>=14.1.0
-markdown-it-py==4.0.0
-mdurl==0.1.2
-pygments==2.19.2
+rich
+markdown-it-py
+mdurl
+pygments
 https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
