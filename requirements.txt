@@ -3,3 +3,4 @@ streamlit
 PyPDF2
 spacy>=3.5.0
 https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0.tar.gz
+pip install --upgrade pip setuptools wheel
