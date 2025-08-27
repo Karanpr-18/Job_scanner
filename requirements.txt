@@ -1,4 +1,4 @@
-python==3.11.13
+streamlit
 spacy
 scikit-learn
 rich
