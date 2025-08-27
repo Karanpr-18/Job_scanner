@@ -1,6 +1,6 @@
-scikit-learn
-streamlit
-PyPDF2
 spacy>=3.5.0
-https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0.tar.gz
-pip install --upgrade pip setuptools wheel
+rich>=14.1.0
+markdown-it-py==4.0.0
+mdurl==0.1.2
+pygments==2.19.2
+https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
