@@ -6,12 +6,6 @@ import sys
 
 model_name = "en_core_web_lg"
 
-try:
-    nlp = spacy.load(model_name)
-except OSError:
-    subprocess.run([sys.executable, "-m", "spacy", "download", model_name], check=True)
-    nlp = spacy.load(model_name)
-
 
 nlp = spacy.load('en_core_web_lg')
 
