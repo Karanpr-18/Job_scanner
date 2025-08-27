@@ -1,4 +1,5 @@
 spacy>=3.5.0
+scikit-learn
 rich>=14.1.0
 markdown-it-py==4.0.0
 mdurl==0.1.2
