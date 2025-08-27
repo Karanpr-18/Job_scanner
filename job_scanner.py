@@ -1,6 +1,17 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import spacy
+import subprocess
+import sys
+
+model_name = "en_core_web_lg"
+
+try:
+    nlp = spacy.load(model_name)
+except OSError:
+    subprocess.run([sys.executable, "-m", "spacy", "download", model_name], check=True)
+    nlp = spacy.load(model_name)
+
 
 nlp = spacy.load('en_core_web_lg')
 
@@ -36,3 +47,6 @@ def calculate_match_score(job_desc, cv_text):
     cosine_sim = cosine_similarity(vectors[0:1], vectors[1:2])[0][0]
     score = round(cosine_sim * 100, 2)
     return score
+
+import en_core_web_lg
+print(en_core_web_lg.__file__)
